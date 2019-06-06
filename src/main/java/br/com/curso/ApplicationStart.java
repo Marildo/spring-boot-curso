@@ -1,11 +1,16 @@
-package br.com.curso.start;
+package br.com.curso;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/*
 @EnableAutoConfiguration
-@ComponentScan(basePackages = "br.com.curso.endpoint")
+@ComponentScan(basePackages = {"br.com.curso.*"})
+@Configuration
+ ou apenas @SpringBootApplication
+ */
+
+@SpringBootApplication
 public class ApplicationStart {
 
     public static void main(String[] args){
