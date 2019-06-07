@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -35,9 +36,19 @@ public class StudentEndpoint {
         return new ResponseEntity<>(new CustonErrorType("Student not found"), HttpStatus.NOT_FOUND);
     }
 
+    @GetMapping(path = "/findByName/{name}")
+    public ResponseEntity<?> findByName(@PathVariable("name") String name) {
+       List<Student> students = dao.findByNameIgnoreCaseContaining(name);
+
+        if (!students.isEmpty())
+            return new ResponseEntity<>(students, HttpStatus.OK);
+        return new ResponseEntity<>(new CustonErrorType("Student not found"), HttpStatus.NOT_FOUND);
+    }
+
+
     @PostMapping
     public ResponseEntity<?> create(@RequestBody Student student) {
-        return new ResponseEntity<>(dao.save(student), HttpStatus.OK);
+        return new ResponseEntity<>(dao.save(student), HttpStatus.CREATED);
     }
 
     @PutMapping
