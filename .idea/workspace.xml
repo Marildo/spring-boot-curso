@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e09f5ed-3857-4f51-aba9-9ef1f68ba209" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/curso/error/ResourceNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-curso.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-curso.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/curso/endpoint/StudentEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/curso/endpoint/StudentEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/curso/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/curso/repository/StudentRepository.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,12 +25,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/endpoint/StudentEndpoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+            <state relative-caret-position="153">
+              <caret line="36" column="71" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#577#578#0" expanded="true" />
                 <element signature="e#607#608#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/error/ResourceNotFoundException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#148#149#0" expanded="true" />
+                <element signature="e#178#179#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,6 +84,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/curso/ApplicationStart.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/curso/repository/StudentRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/curso/error/ResourceNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/curso/endpoint/StudentEndpoint.java" />
       </list>
     </option>
@@ -146,6 +159,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="curso" type="462c0819:PsiDirectoryNode" />
               <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="curso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-curso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="curso" type="462c0819:PsiDirectoryNode" />
+              <item name="error" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="curso" type="b2602c69:ProjectViewProjectNode" />
@@ -277,7 +299,7 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -287,7 +309,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34244373" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34244373" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -432,10 +454,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/error/ResourceNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#148#149#0" expanded="true" />
+            <element signature="e#178#179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/endpoint/StudentEndpoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+        <state relative-caret-position="153">
+          <caret line="36" column="71" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#577#578#0" expanded="true" />

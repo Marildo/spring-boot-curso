@@ -1,6 +1,7 @@
 package br.com.curso.endpoint;
 
 import br.com.curso.error.CustonErrorType;
+import br.com.curso.error.ResourceNotFoundException;
 import br.com.curso.model.Student;
 import br.com.curso.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +34,7 @@ public class StudentEndpoint {
 
         if (opt.isPresent())
             return new ResponseEntity<>(opt.get(), HttpStatus.OK);
-        return new ResponseEntity<>(new CustonErrorType("Student not found"), HttpStatus.NOT_FOUND);
+        throw  new ResourceNotFoundException("Student not found for id "+id);
     }
 
     @GetMapping(path = "/findByName/{name}")
