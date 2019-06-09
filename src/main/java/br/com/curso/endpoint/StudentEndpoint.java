@@ -31,7 +31,6 @@ public class StudentEndpoint {
     @GetMapping(path = "/{id}")
     public ResponseEntity<?> readById(@PathVariable("id") Long id) {
         Optional<Student> opt = dao.findById(id);
-
         if (opt.isPresent())
             return new ResponseEntity<>(opt.get(), HttpStatus.OK);
         throw  new ResourceNotFoundException("Student not found for id "+id);
@@ -45,7 +44,6 @@ public class StudentEndpoint {
             return new ResponseEntity<>(students, HttpStatus.OK);
         return new ResponseEntity<>(new CustonErrorType("Student not found"), HttpStatus.NOT_FOUND);
     }
-
 
     @PostMapping
     public ResponseEntity<?> create(@RequestBody Student student) {
