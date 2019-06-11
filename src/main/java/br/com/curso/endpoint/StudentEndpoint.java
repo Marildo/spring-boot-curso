@@ -19,6 +19,11 @@ import java.util.Optional;
 @RequestMapping("students")
 public class StudentEndpoint {
 
+    /*
+       students?sort=id,desc
+       students?page=2&size=3
+     */
+
     private final StudentRepository dao;
 
     @Autowired
