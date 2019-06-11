@@ -5,6 +5,7 @@ import br.com.curso.error.ResourceNotFoundException;
 import br.com.curso.model.Student;
 import br.com.curso.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
@@ -26,8 +27,8 @@ public class StudentEndpoint {
     }
 
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<?> readAll() {
-        return new ResponseEntity<>(dao.findAll(), HttpStatus.OK);
+    public ResponseEntity<?> readAll(Pageable pageable) {
+        return new ResponseEntity<>(dao.findAll(pageable), HttpStatus.OK);
     }
 
     @GetMapping(path = "/{id}")
