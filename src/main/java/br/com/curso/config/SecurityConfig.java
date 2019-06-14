@@ -20,25 +20,26 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private JwtTokenProvider tokenProvider;
 
     @Bean
-    public BCryptPasswordEncoder passwordEncoder(){
+    public BCryptPasswordEncoder passwordEncoder() {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         return encoder;
     }
 
-    @Override
     @Bean
+    @Override
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean();
     }
 
-    protected void configure(HttpSecurity httpSecurity)throws Exception{
-        httpSecurity.httpBasic().disable().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+    protected void configure(HttpSecurity httpSecurity) throws Exception {
+        httpSecurity.httpBasic().disable()
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authorizeRequests()
-                .antMatchers("/auth/signin","/api-docs/***","swagger-ui.html").permitAll()
+                .antMatchers("/auth/signin", "/api-docs/***", "swagger-ui.html").permitAll()
                 .antMatchers("/api/**").authenticated()
                 .antMatchers("/users").denyAll()
-                 .and()
-                 .apply(new JwtConfigure(tokenProvider));
+                .and()
+                .apply(new JwtConfigure(tokenProvider));
     }
 }
