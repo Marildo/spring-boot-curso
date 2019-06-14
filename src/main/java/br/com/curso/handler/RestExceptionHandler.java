@@ -1,19 +1,16 @@
 package br.com.curso.handler;
 
-import br.com.curso.error.ResourceNotFoundDetails;
-import br.com.curso.error.ResourceNotFoundException;
-import br.com.curso.error.ValidationErrorDetails;
+import br.com.curso.error.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import java.time.LocalDateTime;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @ControllerAdvice
 public class RestExceptionHandler {
@@ -47,5 +44,18 @@ public class RestExceptionHandler {
                 fieldError.getDefaultMessage()));
 
         return new ResponseEntity<>(details, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(InvalidJwtAuthenticationException.class)
+    public final ResponseEntity<?> invalidJwtAutenticationException(Exception exception , WebRequest request) {
+
+        NotAuthenticationDetails notAuth = new NotAuthenticationDetails();
+        notAuth.setStatus(HttpStatus.BAD_REQUEST.value())
+                .setTitle("Not Authentication")
+                .setDetail(exception.getMessage())
+                .setDeveloperMessage(exception.toString())
+                .setPath(ServletUriComponentsBuilder.fromCurrentRequest().toUriString());
+
+        return new ResponseEntity<>(notAuth, HttpStatus.BAD_REQUEST);
     }
 }
