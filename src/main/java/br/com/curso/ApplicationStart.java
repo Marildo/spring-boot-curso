@@ -18,7 +18,7 @@ import java.util.TimeZone;
 @SpringBootApplication
 public class ApplicationStart {
     public static void main(String[] args) {
-        makeToken();
+      //  makeToken();
         SpringApplication.run(ApplicationStart.class, args);
     }
 

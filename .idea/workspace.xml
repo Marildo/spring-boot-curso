@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e09f5ed-3857-4f51-aba9-9ef1f68ba209" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/curso/endpoint/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-curso.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-curso.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/curso/ApplicationStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/curso/ApplicationStart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/curso/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/curso/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/curso/endpoint/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/curso/endpoint/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/curso/endpoint/StudentEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/curso/endpoint/StudentEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/curso/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/curso/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/curso/security/jwt/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/curso/security/jwt/JwtTokenProvider.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,49 +29,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/security/jwt/JwtConfigure.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/config/SecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="129">
+              <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#550#551#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/config/SecurityConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/security/jwt/JwtTokenProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
-              <caret line="35" column="75" selection-start-line="35" selection-start-column="75" selection-end-line="35" selection-end-column="75" />
+            <state relative-caret-position="197">
+              <caret line="80" column="5" lean-forward="true" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1196#1197#0" expanded="true" />
-                <element signature="e#1278#1279#0" expanded="true" />
+                <element signature="e#1937#1938#0" expanded="true" />
+                <element signature="e#1982#1983#0" expanded="true" />
+                <element signature="e#3067#3068#0" expanded="true" />
+                <element signature="e#3105#3106#0" expanded="true" />
+                <element signature="e#3417#3418#0" expanded="true" />
+                <element signature="e#3471#3472#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/endpoint/AuthController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/security/jwt/JwtTokenProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6">
-              <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+            <state relative-caret-position="200">
+              <caret line="48" column="40" lean-forward="true" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1196#1197#0" expanded="true" />
+                <element signature="e#1278#1279#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,7 +96,6 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/curso/repository/StudentRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/curso/Adapter.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/curso/model/Student.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/curso/model/Permintion.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/curso/model/Permission.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/curso/Service/UserService.java" />
@@ -105,7 +103,6 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/curso/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/curso/services/UserServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/curso/security/AccountCredentialsVO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/curso/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/curso/error/InvalidJwtAutenticationException.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/curso/error/InvalidJwtAuthenticationException.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/curso/error/ResourceNotFoundDetails.java" />
@@ -113,12 +110,15 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/curso/handler/RestExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/curso/security/jwt/JwtTokenFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/curso/security/jwt/JwtConfigure.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/curso/security/jwt/JwtTokenProvider.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/curso/ApplicationStart.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/curso/endpoint/StudentEndpoint.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/curso/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/curso/ApplicationStart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/curso/endpoint/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/curso/endpoint/AuthController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/curso/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/curso/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/curso/security/jwt/JwtTokenProvider.java" />
       </list>
     </option>
   </component>
@@ -155,29 +155,29 @@
         <subPane>
           <expand>
             <path>
-              <item name="spring-boot-curso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="curso" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-curso" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="spring-boot-curso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="curso" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-curso" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="spring-boot-curso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="curso" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-curso" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="spring-boot-curso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="curso" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-curso" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="spring-boot-curso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="curso" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-curso" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -185,7 +185,7 @@
               <item name="curso" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="spring-boot-curso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="curso" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-curso" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -194,7 +194,7 @@
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="spring-boot-curso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="curso" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-curso" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -203,7 +203,7 @@
               <item name="endpoint" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="spring-boot-curso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="curso" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-curso" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -212,7 +212,7 @@
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="spring-boot-curso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="curso" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-curso" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -221,7 +221,7 @@
               <item name="security" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="spring-boot-curso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="curso" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-curso" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -231,17 +231,18 @@
               <item name="jwt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="spring-boot-curso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="curso" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-curso" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="curso" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -253,11 +254,19 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/br/com/curso/config" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programacao\spring-boot-curso\src\main\java\br\com\curso\config" />
+      <recent name="D:\Programacao\spring-boot-curso\src\main\java\br\com\curso\endpoint" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -354,7 +363,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24148372" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24508321" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -364,7 +373,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3376206" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19614148" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39871383" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -425,7 +434,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE.jar!/org/springframework/web/context/request/ServletRequestAttributes.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE.jar!/org/springframework/web/context/request/AbstractRequestAttributes.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.7.RELEASE/spring-webmvc-5.1.7.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.7.RELEASE/spring-webmvc-5.1.7.RELEASE.jar!/org/springframework/web/servlet/HandlerExecutionChain.class" />
@@ -486,24 +494,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/services/UserServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/services/UserServices.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/security/AccountCredentialsVO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -515,26 +510,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#685#686#0" expanded="true" />
             <element signature="e#735#736#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/ApplicationStart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="21" column="57" lean-forward="true" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1129">
-          <caret line="125" column="31" lean-forward="true" selection-start-line="125" selection-start-column="31" selection-end-line="125" selection-end-column="31" />
-          <folding>
-            <element signature="e#3067#3068#0" expanded="true" />
-            <element signature="e#3105#3106#0" expanded="true" />
-            <element signature="e#3417#3418#0" expanded="true" />
-            <element signature="e#3471#3472#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -563,53 +538,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/config/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/endpoint/StudentEndpoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="-306">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/security/jwt/JwtTokenProvider.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/endpoint/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="35" column="75" selection-start-line="35" selection-start-column="75" selection-end-line="35" selection-end-column="75" />
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1278#1279#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/security/jwt/JwtConfigure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/endpoint/AuthController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+        <state relative-caret-position="357">
+          <caret line="21" column="57" lean-forward="true" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2151#2180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/security/jwt/JwtConfigure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/ApplicationStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="41" lean-forward="true" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="80" column="5" lean-forward="true" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+          <folding>
+            <element signature="e#1937#1938#0" expanded="true" />
+            <element signature="e#1982#1983#0" expanded="true" />
+            <element signature="e#3067#3068#0" expanded="true" />
+            <element signature="e#3105#3106#0" expanded="true" />
+            <element signature="e#3417#3418#0" expanded="true" />
+            <element signature="e#3471#3472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/curso/security/jwt/JwtTokenProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="48" column="40" lean-forward="true" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1196#1197#0" expanded="true" />
+            <element signature="e#1278#1279#0" expanded="true" />
           </folding>
         </state>
       </provider>
